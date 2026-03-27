@@ -1,0 +1,1797 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SEMITEC Korea 기술영업 직무 매뉴얼</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e5e7eb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        /* No gradients, using solid colors */
+        .brand-navy { color: #0A1931; }
+        .brand-blue { color: #00509E; }
+        .bg-brand-navy { background-color: #0A1931; }
+        .bg-brand-blue { background-color: #00509E; }
+        .bg-brand-light { background-color: #F0F4F8; }
+        
+        /* Decorative elements */
+        .decor-top-left {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 400px;
+            height: 400px;
+            background-color: #0A1931;
+            clip-path: polygon(0 0, 100% 0, 0 100%);
+            z-index: 10;
+        }
+        .decor-top-left-accent {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 420px;
+            height: 420px;
+            background-color: #00509E;
+            clip-path: polygon(0 0, 100% 0, 0 100%);
+            z-index: 9;
+        }
+        .decor-bottom-right {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 250px;
+            height: 250px;
+            background-color: #00509E;
+            clip-path: polygon(100% 100%, 0 100%, 100% 0);
+            z-index: 10;
+        }
+        
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 20;
+            padding: 4rem;
+            text-align: center;
+        }
+        
+        .logo-placeholder {
+            font-weight: 900;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Geometric Accents -->
+<div class="decor-top-left"></div>
+<div class="decor-top-left-accent"></div>
+<div class="decor-bottom-right"></div>
+<!-- Top Bar / Logo Area -->
+<div class="absolute top-10 left-12 z-30 flex items-center gap-3">
+<i class="fa-solid fa-microchip text-white text-3xl"></i>
+<div>
+<p class="text-white text-2xl logo-placeholder m-0 tracking-widest">SEMITEC</p>
+</div>
+</div>
+<!-- Main Content -->
+<div class="main-content bg-brand-light bg-opacity-40">
+<!-- Icon/Visual Anchor -->
+<div class="w-24 h-24 rounded-full bg-brand-light flex items-center justify-center mb-8 border-4 border-[#00509E] shadow-lg">
+<i class="fa-solid fa-temperature-half text-4xl text-[#00509E]"></i>
+</div>
+<!-- Document Type Tag -->
+<div class="mb-6 px-4 py-1 border-2 border-[#0A1931] rounded-full">
+<p class="text-[#0A1931] font-bold text-sm tracking-widest uppercase">Confidential / Internal Use Only</p>
+</div>
+<!-- Main Title -->
+<div class="mb-4">
+<p class="text-5xl font-extrabold brand-navy leading-tight tracking-tight">SEMITEC Korea 기술영업(온도센서)</p>
+<p class="text-5xl font-extrabold brand-navy leading-tight tracking-tight mt-2">직무 매뉴얼 <span class="text-[#00509E]">최종본</span></p>
+</div>
+<!-- Divider -->
+<div class="w-32 h-1.5 bg-brand-blue my-8 rounded-full"></div>
+<!-- Subtitle -->
+<div class="max-w-3xl">
+<p class="text-2xl text-gray-600 font-medium leading-relaxed">NTC 서미스터 전문가 육성을 위한</p>
+<p class="text-2xl text-gray-600 font-medium leading-relaxed">실무 프로세스 및 기술 기초</p>
+</div>
+</div>
+<!-- Footer / Metadata -->
+<div class="absolute bottom-12 left-0 right-0 z-20 flex justify-between items-end px-16">
+<div class="flex items-center gap-4 border-l-4 border-[#00509E] pl-4">
+<div class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center shadow-inner">
+<i class="fa-solid fa-user-tie text-gray-500 text-xl"></i>
+</div>
+<div>
+<p class="text-sm text-gray-500 font-bold uppercase tracking-wider mb-1">Author</p>
+<p class="text-lg text-gray-800 font-bold">기술영업팀 민경선 선임</p>
+</div>
+</div>
+<div class="text-right">
+<p class="text-sm text-gray-500 font-bold uppercase tracking-wider mb-1">Date</p>
+<p class="text-lg text-gray-800 font-bold">2026년 3월</p>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>[Part 1] 단품 업체 및 제품 라인업</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cbd5e1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Solid Brand Colors */
+        .bg-brand-navy { background-color: #0A1931; }
+        .text-brand-navy { color: #0A1931; }
+        .bg-brand-blue { background-color: #00509E; }
+        .text-brand-blue { color: #00509E; }
+        .bg-brand-light { background-color: #F0F4F8; }
+        
+        /* Custom Component Styles */
+        .info-card {
+            background-color: #ffffff;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .product-card {
+            background-color: #ffffff;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .product-card.at-series { border-left: 8px solid #00509E; }
+        .product-card.et-series { border-left: 8px solid #0369A1; }
+        .product-card.ft-series { border-left: 8px solid #0F766E; }
+        
+        .icon-box {
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .at-icon { background-color: #E6F0FA; color: #00509E; }
+        .et-icon { background-color: #E6F4FA; color: #0369A1; }
+        .ft-icon { background-color: #E6F5F4; color: #0F766E; }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Header -->
+<header class="h-24 bg-brand-navy flex items-center px-12 shrink-0 justify-between">
+<div class="flex items-center gap-4">
+<i class="fa-solid fa-layer-group text-white text-3xl"></i>
+<p class="text-white text-3xl font-bold m-0 tracking-wide">[Part 1] 단품 업체 및 제품 라인업</p>
+</div>
+<div>
+<p class="text-gray-300 font-medium tracking-widest text-sm">SEMITEC KOREA TECHNICAL SALES</p>
+</div>
+</header>
+<!-- Main Content (2 Columns) -->
+<main class="flex-1 flex px-12 py-8 gap-10 bg-brand-light">
+<!-- Left Column: Core Management Points -->
+<section class="w-5/12 flex flex-col gap-6">
+<div class="border-b-2 border-gray-300 pb-2 mb-2">
+<p class="text-2xl font-bold text-brand-navy">거래처 관리의 핵심</p>
+</div>
+<!-- Point 1 -->
+<div class="info-card">
+<div class="flex items-center gap-3">
+<i class="fa-solid fa-handshake text-brand-blue text-xl"></i>
+<p class="text-xl font-bold text-gray-800">맞춤형 대응 전략</p>
+</div>
+<div class="bg-gray-50 p-4 rounded border border-gray-100">
+<p class="text-gray-700 leading-relaxed font-medium text-lg">국내 가전/자동차 1차 벤더 및 부품 유통사별 <span class="text-brand-blue font-bold">맞춤형 대응</span>이 필수적입니다.</p>
+</div>
+</div>
+<!-- Point 2 -->
+<div class="info-card">
+<div class="flex items-center gap-3">
+<i class="fa-solid fa-chart-line text-brand-blue text-xl"></i>
+<p class="text-xl font-bold text-gray-800">기술 매칭 테이블</p>
+</div>
+<div class="bg-gray-50 p-4 rounded border border-gray-100">
+<p class="text-gray-700 leading-relaxed font-medium text-lg">업체별 선호 특성치 (<span class="font-bold">R<sub>25</sub></span> 및 <span class="font-bold">B상수</span>) 매칭 테이블을 완벽히 숙지해야 합니다.</p>
+</div>
+<div class="flex gap-2 mt-2">
+<div class="px-3 py-1 bg-[#0A1931] text-white text-sm rounded"><p>R<sub>25</sub> : 기본 저항값</p></div>
+<div class="px-3 py-1 bg-[#00509E] text-white text-sm rounded"><p>B상수 : 온도 계수</p></div>
+</div>
+</div>
+</section>
+<!-- Right Column: Product Line-up -->
+<section class="w-7/12 flex flex-col gap-5">
+<div class="border-b-2 border-gray-300 pb-2 mb-2">
+<p class="text-2xl font-bold text-brand-navy">주요 제품군 (NTC Line-up)</p>
+</div>
+<!-- AT Series -->
+<div class="product-card at-series">
+<div class="icon-box at-icon">
+<i class="fa-solid fa-industry"></i>
+</div>
+<div class="flex-1">
+<p class="text-xl font-bold text-[#00509E] mb-1">AT 시리즈</p>
+<p class="text-gray-600 font-medium mb-1">고정밀도 범용 센서</p>
+<ul class="text-gray-700 text-sm list-disc pl-5 mt-2">
+<li><p><span class="font-bold text-gray-900">특징:</span> 고정밀도 (허용 오차 ±1%)</p></li>
+<li><p><span class="font-bold text-gray-900">적용:</span> 가전제품 및 산업용 기기 범용</p></li>
+</ul>
+</div>
+</div>
+<!-- ET Series -->
+<div class="product-card et-series">
+<div class="icon-box et-icon">
+<i class="fa-solid fa-microchip"></i>
+</div>
+<div class="flex-1">
+<p class="text-xl font-bold text-[#0369A1] mb-1">ET 시리즈</p>
+<p class="text-gray-600 font-medium mb-1">초소형 고속 응답 센서</p>
+<ul class="text-gray-700 text-sm list-disc pl-5 mt-2">
+<li><p><span class="font-bold text-gray-900">특징:</span> 초소형 사이즈, 매우 빠른 온도 응답성</p></li>
+<li><p><span class="font-bold text-gray-900">적용:</span> 모바일/IT 기기 및 배터리 팩(BMS)용</p></li>
+</ul>
+</div>
+</div>
+<!-- FT Series -->
+<div class="product-card ft-series">
+<div class="icon-box ft-icon">
+<i class="fa-solid fa-layer-group"></i>
+</div>
+<div class="flex-1">
+<p class="text-xl font-bold text-[#0F766E] mb-1">FT 시리즈</p>
+<p class="text-gray-600 font-medium mb-1">필름형 박형 센서</p>
+<ul class="text-gray-700 text-sm list-disc pl-5 mt-2">
+<li><p><span class="font-bold text-gray-900">특징:</span> 얇은 필름형 구조로 유연성 확보</p></li>
+<li><p><span class="font-bold text-gray-900">적용:</span> 협소한 공간 및 표면 밀착 온도 감지에 최적화</p></li>
+</ul>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="h-16 shrink-0 bg-white border-t border-gray-200 flex items-center px-12 justify-between">
+<div class="flex items-center gap-2 text-gray-500">
+<i class="fa-solid fa-database"></i>
+<p class="text-sm font-medium"><span class="font-bold">데이터 근거:</span> SEMITEC 제품 카탈로그 및 업체별 상담 일지</p>
+</div>
+<div>
+<p class="text-sm text-gray-400 font-bold">Slide 2</p>
+</div>
+</footer>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>[Part 2] 단가 산출 및 본사 승인 프로세스</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cbd5e1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Solid Brand Colors */
+        .bg-brand-navy { background-color: #0A1931; }
+        .text-brand-navy { color: #0A1931; }
+        .bg-brand-blue { background-color: #00509E; }
+        .text-brand-blue { color: #00509E; }
+        .bg-brand-light { background-color: #F0F4F8; }
+        
+        /* Custom Components */
+        .formula-box {
+            background-color: #0A1931;
+            border-radius: 0.75rem;
+            padding: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            border: 4px solid #00509E;
+        }
+        
+        .variable-card {
+            background-color: #ffffff;
+            border-left: 6px solid #00509E;
+            padding: 1.25rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .step-container {
+            position: relative;
+            padding-left: 3rem;
+            padding-bottom: 2rem;
+        }
+        
+        .step-container::before {
+            content: '';
+            position: absolute;
+            left: 11px;
+            top: 30px;
+            bottom: 0;
+            width: 3px;
+            background-color: #cbd5e1;
+        }
+        
+        .step-container:last-child::before {
+            display: none;
+        }
+        
+        .step-marker {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background-color: #00509E;
+            border: 4px solid #E6F0FA;
+            z-index: 10;
+        }
+        
+        .step-content {
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.5rem;
+            padding: 1.25rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Header -->
+<header class="h-24 bg-brand-navy flex items-center px-12 shrink-0 justify-between">
+<div class="flex items-center gap-4">
+<i class="fa-solid fa-calculator text-white text-3xl"></i>
+<p class="text-white text-3xl font-bold m-0 tracking-wide">[Part 2] 단가 산출 및 본사 승인 프로세스</p>
+</div>
+<div>
+<p class="text-gray-300 font-medium tracking-widest text-sm">SEMITEC KOREA TECHNICAL SALES</p>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 flex px-12 py-8 gap-10 bg-brand-light">
+<!-- Left Column: Formula & Variables -->
+<section class="w-1/2 flex flex-col gap-6">
+<div class="border-b-2 border-gray-300 pb-2">
+<p class="text-2xl font-bold text-brand-navy">견적 산출 로직 (Quotation Logic)</p>
+</div>
+<!-- Formula Highlight Box -->
+<div class="formula-box text-center relative mt-2">
+<div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#00509E] text-white px-4 py-1 rounded-full text-sm font-bold shadow-md">
+<p>기본 단가 산출 공식</p>
+</div>
+<p class="text-white text-3xl font-black tracking-wider leading-relaxed mt-2">
+<span class="text-gray-400">[</span>
+                        (Base Cost <span class="text-[#60A5FA]">×</span> Margin) 
+                        <span class="text-[#60A5FA]">+</span> Logistics Fee
+                        <span class="text-gray-400">]</span>
+<br/>
+<span class="text-[#FBBF24]">×</span> Exchange Rate
+                    </p>
+</div>
+<!-- Volatility Management Variables -->
+<div class="flex flex-col gap-4 mt-2">
+<p class="text-lg font-bold text-gray-800 flex items-center gap-2">
+<i class="fa-solid fa-triangle-exclamation text-[#00509E]"></i> 주요 변동성 관리 요소 (실시간 반영 필수)
+                    </p>
+<div class="variable-card">
+<div class="flex items-center justify-between mb-2">
+<p class="font-bold text-lg text-brand-navy"><i class="fa-solid fa-money-bill-transfer mr-2"></i>환율 (Exchange Rate)</p>
+<span class="bg-yellow-100 text-yellow-800 text-xs font-bold px-2 py-1 rounded">High Risk</span>
+</div>
+<p class="text-gray-700 text-sm">JPY/USD 환율 변동을 견적에 실시간 반영하여 마진 손실을 방지합니다. 본사 기준 환율 정책을 항시 모니터링해야 합니다.</p>
+</div>
+<div class="variable-card border-l-6" style="border-left-color: #0369A1;">
+<div class="flex items-center justify-between mb-2">
+<p class="font-bold text-lg text-brand-navy"><i class="fa-solid fa-plane-departure mr-2"></i>물류비 (Logistics Fee)</p>
+<span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">Variable</span>
+</div>
+<p class="text-gray-700 text-sm">긴급도 및 물동량에 따른 항공(Air) 및 해상(Ocean) 운임의 실시간 변동분을 산출 로직에 정확히 합산합니다.</p>
+</div>
+</div>
+</section>
+<!-- Right Column: Process Flow -->
+<section class="w-1/2 flex flex-col gap-6">
+<div class="border-b-2 border-gray-300 pb-2">
+<p class="text-2xl font-bold text-brand-navy">가격 승인 절차 (Price Quotation Process)</p>
+</div>
+<div class="mt-4 flex flex-col pl-2">
+<!-- Step 1 -->
+<div class="step-container">
+<div class="step-marker"></div>
+<div class="step-content border-t-4 border-t-[#00509E]">
+<p class="text-sm font-bold text-[#00509E] mb-1">STEP 1. 단가 1차 산출</p>
+<p class="text-lg font-bold text-gray-800 mb-2">엑셀 자동 견적 산출기(VBA) 활용</p>
+<p class="text-gray-600 text-sm">민경선 선임이 제작한 VBA 툴을 활용하여 Base Cost, 물류비, 환율을 기입하고 1차 견적을 신속하게 도출합니다.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="step-container">
+<div class="step-marker"></div>
+<div class="step-content">
+<p class="text-sm font-bold text-[#00509E] mb-1">STEP 2. 승인 요청서 작성</p>
+<p class="text-lg font-bold text-gray-800 mb-2">논리적 단가 인하 근거 제시</p>
+<p class="text-gray-600 text-sm">비즈니스 일본어 경어(비즈니스 메일 양식)를 사용하여 타사 경쟁 상황, 향후 양산 물량 등 타당한 근거를 문서화합니다.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="step-container pb-0">
+<div class="step-marker"></div>
+<div class="step-content bg-[#E6F0FA] border-[#00509E]">
+<p class="text-sm font-bold text-[#00509E] mb-1">STEP 3. 본사 / 해외 지사 승인</p>
+<p class="text-lg font-bold text-brand-navy mb-2"><i class="fa-solid fa-check-double mr-2"></i>신규 프로젝트 및 대량 발주 시 필수</p>
+<p class="text-gray-700 text-sm">작성된 품의서를 바탕으로 일본 본사 및 관련 해외 제조 거점(지사)의 최종 가격 승인을 획득합니다.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="h-16 shrink-0 bg-white border-t border-gray-200 flex items-center px-12 justify-between">
+<div class="flex items-center gap-2 text-gray-500">
+<i class="fa-solid fa-wrench"></i>
+<p class="text-sm font-medium"><span class="font-bold">업무 도구:</span> 민경선 선임 제작 '엑셀 자동 견적 산출기(VBA)' 필수 활용</p>
+</div>
+<div>
+<p class="text-sm text-gray-400 font-bold">Slide 3</p>
+</div>
+</footer>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>[Part 3] 글로벌 물류 거점 및 출하 방식</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cbd5e1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Solid Brand Colors */
+        .bg-brand-navy { background-color: #0A1931; }
+        .text-brand-navy { color: #0A1931; }
+        .bg-brand-blue { background-color: #00509E; }
+        .text-brand-blue { color: #00509E; }
+        .bg-brand-light { background-color: #F0F4F8; }
+        
+        /* Custom Components */
+        .map-container {
+            background-color: #E6F0FA;
+            border-radius: 0.75rem;
+            position: relative;
+            border: 2px solid #cbd5e1;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .map-bg-grid {
+            position: absolute;
+            inset: 0;
+            background-image: radial-gradient(#cbd5e1 2px, transparent 2px);
+            background-size: 30px 30px;
+            opacity: 0.5;
+            /* Replaced gradient with solid color fallback and distinct grid pattern logic */
+            /* Actually, prompt says "Do not use any CSS gradients". I will use box-shadow or border patterns instead */
+            background-image: none;
+        }
+        
+        .map-bg-grid-safe {
+            position: absolute;
+            inset: 0;
+            opacity: 0.2;
+            background-color: transparent;
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h40v40H0V0zm20 20h20v20H20V20zM0 20h20v20H0V20z' fill='%2300509E' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+
+        .node-card {
+            background-color: #ffffff;
+            border: 3px solid #00509E;
+            border-radius: 0.5rem;
+            padding: 1.25rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            position: absolute;
+            z-index: 10;
+        }
+
+        .node-hq { top: 15%; right: 10%; border-color: #0A1931; }
+        .node-cn { top: 45%; left: 10%; }
+        .node-vn { bottom: 15%; right: 35%; }
+
+        .connection-line {
+            position: absolute;
+            background-color: #94a3b8;
+            z-index: 5;
+        }
+        
+        .line-1 { top: 25%; left: 30%; width: 40%; height: 3px; transform: rotate(20deg); }
+        .line-2 { top: 60%; left: 25%; width: 35%; height: 3px; transform: rotate(30deg); }
+        .line-3 { top: 40%; right: 25%; width: 25%; height: 3px; transform: rotate(-45deg); }
+
+        .checklist-item {
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-left: 6px solid #00509E;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .alert-box {
+            background-color: #FEF3C7;
+            border: 2px solid #F59E0B;
+            border-radius: 0.5rem;
+            padding: 1.25rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Header -->
+<header class="h-24 bg-brand-navy flex items-center px-12 shrink-0 justify-between">
+<div class="flex items-center gap-4">
+<i class="fa-solid fa-earth-asia text-white text-3xl"></i>
+<p class="text-white text-3xl font-bold m-0 tracking-wide">[Part 3] 글로벌 물류 거점 및 출하 방식</p>
+</div>
+<div>
+<p class="text-gray-300 font-medium tracking-widest text-sm">SEMITEC KOREA TECHNICAL SALES</p>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 flex px-12 py-8 gap-8 bg-brand-light">
+<!-- Left Column: Global Logistics Hub Map -->
+<section class="w-7/12 flex flex-col gap-4">
+<div class="border-b-2 border-gray-300 pb-2">
+<p class="text-2xl font-bold text-brand-navy">생산 거점 (Global Manufacturing Sites)</p>
+</div>
+<div class="map-container flex-1">
+<!-- SVG Background Map Graphic -->
+<svg class="absolute inset-0 w-full h-full text-blue-100 opacity-50" fill="currentColor" viewbox="0 0 800 600">
+<path d="M600,100 C650,150 700,100 750,200 C720,250 680,220 650,300 C600,250 550,280 500,200 C550,150 580,120 600,100 Z"></path>
+<path d="M200,200 C300,180 400,250 450,350 C350,400 250,380 150,450 C100,350 150,250 200,200 Z"></path>
+<path d="M400,450 C450,420 500,480 550,550 C480,580 420,550 380,500 Z"></path>
+</svg>
+<!-- Connection Lines -->
+<div class="connection-line line-1"></div>
+<div class="connection-line line-2"></div>
+<div class="connection-line line-3"></div>
+<!-- HQ Node (Japan) -->
+<div class="node-card node-hq">
+<div class="flex items-center gap-3 mb-2">
+<div class="w-10 h-10 rounded-full bg-[#0A1931] flex items-center justify-center text-white">
+<i class="fa-solid fa-building"></i>
+</div>
+<div>
+<p class="font-bold text-lg text-[#0A1931]">일본 본사</p>
+<p class="text-xs text-gray-500 font-bold">HQ &amp; Advanced Tech</p>
+</div>
+</div>
+<div class="bg-gray-50 p-2 rounded mt-2 border border-gray-100">
+<p class="text-sm text-gray-700 font-medium leading-tight">고부가가치 소자 및<br/>신기술 적용 제품 생산</p>
+</div>
+</div>
+<!-- China Node -->
+<div class="node-card node-cn">
+<div class="flex items-center gap-3 mb-2">
+<div class="w-10 h-10 rounded-full bg-[#00509E] flex items-center justify-center text-white">
+<i class="fa-solid fa-industry"></i>
+</div>
+<div>
+<p class="font-bold text-lg text-[#00509E]">중국 심천</p>
+<p class="text-xs text-gray-500 font-bold">Mass Production</p>
+</div>
+</div>
+<div class="bg-gray-50 p-2 rounded mt-2 border border-gray-100">
+<p class="text-sm text-gray-700 font-medium leading-tight">대량 생산 모델 중심 및<br/>글로벌 BCP 1차 거점</p>
+</div>
+</div>
+<!-- Vietnam Node -->
+<div class="node-card node-vn">
+<div class="flex items-center gap-3 mb-2">
+<div class="w-10 h-10 rounded-full bg-[#0369A1] flex items-center justify-center text-white">
+<i class="fa-solid fa-industry"></i>
+</div>
+<div>
+<p class="font-bold text-lg text-[#0369A1]">베트남</p>
+<p class="text-xs text-gray-500 font-bold">Mass Production &amp; BCP</p>
+</div>
+</div>
+<div class="bg-gray-50 p-2 rounded mt-2 border border-gray-100">
+<p class="text-sm text-gray-700 font-medium leading-tight">대량 생산 확대 및<br/><span class="font-bold text-[#00509E]">BCP(Business Continuity Plan)</span> 거점</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Right Column: Shipping Checklist -->
+<section class="w-5/12 flex flex-col gap-4">
+<div class="border-b-2 border-gray-300 pb-2">
+<p class="text-2xl font-bold text-brand-navy">출하 방식 (Shipping Methods)</p>
+</div>
+<div class="flex-1 flex flex-col">
+<!-- Checklist Item 1 -->
+<div class="checklist-item">
+<div class="flex items-center gap-3 mb-2">
+<i class="fa-solid fa-truck-fast text-2xl text-[#00509E]"></i>
+<p class="text-xl font-bold text-gray-800">직납 (Direct Delivery)</p>
+</div>
+<ul class="mt-3 space-y-2">
+<li class="flex items-start gap-2">
+<i class="fa-solid fa-check text-green-600 mt-1"></i>
+<p class="text-gray-700 text-base">고객사 공장별 지정 납품 시간 엄수</p>
+</li>
+<li class="flex items-start gap-2">
+<i class="fa-solid fa-check text-green-600 mt-1"></i>
+<p class="text-gray-700 text-base">물동량에 따른 적합한 배차 및 차량 수배</p>
+</li>
+</ul>
+</div>
+<!-- Checklist Item 2 -->
+<div class="checklist-item" style="border-left-color: #0369A1;">
+<div class="flex items-center gap-3 mb-2">
+<i class="fa-solid fa-desktop text-2xl text-[#0369A1]"></i>
+<p class="text-xl font-bold text-gray-800">SCM 포탈 등록</p>
+</div>
+<ul class="mt-3 space-y-2">
+<li class="flex items-start gap-2">
+<i class="fa-solid fa-check text-green-600 mt-1"></i>
+<p class="text-gray-700 text-base">삼성, 현대차 등 대형 고객사 SCM 시스템 활용</p>
+</li>
+<li class="flex items-start gap-2">
+<i class="fa-solid fa-check text-green-600 mt-1"></i>
+<p class="text-gray-700 text-base">출하 전 포탈 내 <span class="font-bold text-[#0369A1]">ASN (사전 출하 통지)</span> 입력 필수</p>
+</li>
+</ul>
+</div>
+<!-- Alert/Notice Box -->
+<div class="alert-box mt-auto">
+<i class="fa-solid fa-bell text-2xl text-[#F59E0B] mt-1"></i>
+<div>
+<p class="text-lg font-bold text-gray-900 mb-1">[특이사항] 출하 공유 게시판 신설</p>
+<p class="text-gray-800 text-sm leading-relaxed">
+<span class="font-bold bg-yellow-200 px-1 rounded">4월부터</span> Microsoft Teams 내 <strong>'출하 공유 게시판'</strong>이 도입됩니다. 모든 출하 일정 및 변경 사항은 시스템에 <strong>실시간 업데이트</strong> 바랍니다.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="h-16 shrink-0 bg-white border-t border-gray-200 flex items-center px-12 justify-between">
+<div class="flex items-center gap-2 text-gray-500">
+<i class="fa-solid fa-circle-info"></i>
+<p class="text-sm font-medium"><span class="font-bold">중요:</span> 출하 지연 발생 시 즉시 유관 부서 및 Teams에 공유할 것</p>
+</div>
+<div>
+<p class="text-sm text-gray-400 font-bold">Slide 4</p>
+</div>
+</footer>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>[Part 4] NTC 제조 공정 및 불량 유형</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cbd5e1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Solid Brand Colors */
+        .bg-brand-navy { background-color: #0A1931; }
+        .text-brand-navy { color: #0A1931; }
+        .bg-brand-blue { background-color: #00509E; }
+        .text-brand-blue { color: #00509E; }
+        .bg-brand-light { background-color: #F0F4F8; }
+        
+        /* Custom Components */
+        .process-card {
+            background-color: #ffffff;
+            border-top: 5px solid #00509E;
+            border-radius: 0.5rem;
+            padding: 1.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+            flex: 1;
+            min-height: 240px;
+        }
+
+        .process-card.core-step {
+            border-top: 5px solid #DC2626;
+            background-color: #FEF2F2;
+            box-shadow: 0 6px 12px rgba(220, 38, 38, 0.15);
+        }
+
+        .step-number {
+            width: 32px;
+            height: 32px;
+            background-color: #00509E;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1rem;
+            position: absolute;
+            top: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 3px solid #F0F4F8;
+        }
+
+        .core-step .step-number {
+            background-color: #DC2626;
+        }
+
+        .process-icon {
+            font-size: 2.5rem;
+            color: #0A1931;
+            margin-bottom: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .core-step .process-icon {
+            color: #DC2626;
+        }
+
+        .process-connector {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            color: #94A3B8;
+            font-size: 1.5rem;
+            z-index: 5;
+        }
+
+        .defect-box {
+            background-color: #FFFBEB;
+            border-left: 6px solid #D97706;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            flex: 1;
+        }
+
+        .action-box {
+            background-color: #E6F0FA;
+            border-left: 6px solid #00509E;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Header -->
+<header class="h-24 bg-brand-navy flex items-center px-12 shrink-0 justify-between">
+<div class="flex items-center gap-4">
+<i class="fa-solid fa-gears text-white text-3xl"></i>
+<p class="text-white text-3xl font-bold m-0 tracking-wide">[Part 4] NTC 제조 공정 및 불량 유형</p>
+</div>
+<div>
+<p class="text-gray-300 font-medium tracking-widest text-sm">SEMITEC KOREA TECHNICAL SALES</p>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 flex flex-col px-12 py-8 bg-brand-light gap-8">
+<!-- Section 1: 5-Stage Stepper -->
+<section class="flex flex-col gap-6">
+<div class="border-b-2 border-gray-300 pb-2">
+<p class="text-2xl font-bold text-brand-navy">제조 5단계 핵심 공정 (5-Stage Manufacturing Process)</p>
+</div>
+<div class="flex items-center justify-between w-full pt-4">
+<!-- Step 1 -->
+<div class="process-card">
+<div class="step-number"><p>1</p></div>
+<i class="fa-solid fa-blender process-icon"></i>
+<p class="text-lg font-bold text-gray-900 mb-2">혼합 (Mixing)</p>
+<div class="bg-gray-100 rounded px-2 py-1 mb-2">
+<p class="text-xs font-bold text-gray-600">B상수 결정 단계</p>
+</div>
+<p class="text-sm text-gray-700 leading-snug">고순도 금속 산화물(Mn, Ni, Co 등)을 정밀 배합하여 기본 특성 확보</p>
+</div>
+<div class="process-connector"><i class="fa-solid fa-chevron-right"></i></div>
+<!-- Step 2 -->
+<div class="process-card">
+<div class="step-number"><p>2</p></div>
+<i class="fa-solid fa-fire-burner process-icon"></i>
+<p class="text-lg font-bold text-gray-900 mb-2">가소/성형</p>
+<div class="bg-blue-100 rounded px-2 py-1 mb-2">
+<p class="text-xs font-bold text-[#00509E]">800~1,000°C</p>
+</div>
+<p class="text-sm text-gray-700 leading-snug">예비 가열을 통한 불순물 제거 및 프레스를 이용한 칩 형상화 작업</p>
+</div>
+<div class="process-connector"><i class="fa-solid fa-chevron-right"></i></div>
+<!-- Step 3 (Core) -->
+<div class="process-card core-step">
+<div class="step-number"><p>3</p></div>
+<i class="fa-solid fa-temperature-arrow-up process-icon"></i>
+<p class="text-lg font-bold text-red-700 mb-2">소결 (Sintering)</p>
+<div class="bg-red-100 rounded px-2 py-1 mb-2 border border-red-200">
+<p class="text-xs font-bold text-red-700">1,100~1,400°C (핵심)</p>
+</div>
+<p class="text-sm text-gray-800 font-medium leading-snug">고온 열처리를 통한 세라믹 반도체화. 센서의 최종 물성을 결정짓는 공정</p>
+</div>
+<div class="process-connector"><i class="fa-solid fa-chevron-right"></i></div>
+<!-- Step 4 -->
+<div class="process-card">
+<div class="step-number"><p>4</p></div>
+<i class="fa-solid fa-layer-group process-icon"></i>
+<p class="text-lg font-bold text-gray-900 mb-2">전극 (Electrode)</p>
+<div class="bg-gray-100 rounded px-2 py-1 mb-2">
+<p class="text-xs font-bold text-gray-600">Ag/Au 페이스트</p>
+</div>
+<p class="text-sm text-gray-700 leading-snug">전도성 페이스트 도포 및 2차 소성을 통한 전기적 연결부 형성</p>
+</div>
+<div class="process-connector"><i class="fa-solid fa-chevron-right"></i></div>
+<!-- Step 5 -->
+<div class="process-card">
+<div class="step-number"><p>5</p></div>
+<i class="fa-solid fa-microscope process-icon"></i>
+<p class="text-lg font-bold text-gray-900 mb-2">검사 (Inspection)</p>
+<div class="bg-green-100 rounded px-2 py-1 mb-2">
+<p class="text-xs font-bold text-green-700">100% 전수 검사</p>
+</div>
+<p class="text-sm text-gray-700 leading-snug">정밀 저항치(R25), B상수 및 절연 내력 등 전기적 특성 전수 테스트</p>
+</div>
+</div>
+</section>
+<!-- Section 2: Defect & Claim Response -->
+<section class="flex flex-col gap-4 mt-4">
+<div class="border-b-2 border-gray-300 pb-2">
+<p class="text-xl font-bold text-brand-navy">클레임 발생 시 대응 프로세스</p>
+</div>
+<div class="flex gap-6 w-full h-full">
+<!-- Defect Types -->
+<div class="defect-box shadow-sm">
+<div class="flex items-center gap-3 mb-3">
+<i class="fa-solid fa-triangle-exclamation text-2xl text-[#D97706]"></i>
+<p class="text-lg font-bold text-gray-900">주요 불량 (Defect) 유형</p>
+</div>
+<ul class="space-y-3 mt-4">
+<li class="flex items-start gap-2">
+<i class="fa-solid fa-circle-dot text-[#D97706] mt-1 text-sm"></i>
+<div>
+<p class="font-bold text-gray-800">저항 편차 (R-Shift)</p>
+<p class="text-sm text-gray-600">스펙 범위를 벗어난 저항값 변동 (주로 소결 공정 온도 편차 기인)</p>
+</div>
+</li>
+<li class="flex items-start gap-2">
+<i class="fa-solid fa-circle-dot text-[#D97706] mt-1 text-sm"></i>
+<div>
+<p class="font-bold text-gray-800">전극 박리 / 크랙 (Crack)</p>
+<p class="text-sm text-gray-600">물리적 충격, 열충격 또는 전극 페이스트 소성 불량으로 인한 구조적 파손</p>
+</div>
+</li>
+</ul>
+</div>
+<!-- Action Guidelines -->
+<div class="action-box shadow-sm">
+<div class="flex items-center gap-3 mb-3">
+<i class="fa-solid fa-magnifying-glass-chart text-2xl text-[#00509E]"></i>
+<p class="text-lg font-bold text-gray-900">제조 공정 역추적 및 대응</p>
+</div>
+<ul class="space-y-3 mt-4">
+<li class="flex items-start gap-2">
+<i class="fa-solid fa-check text-[#00509E] mt-1 text-sm"></i>
+<div>
+<p class="font-bold text-gray-800">Lot 번호 기반 이력 추적</p>
+<p class="text-sm text-gray-600">제품 라벨의 Lot No.를 통해 5단계 제조 시점의 작업 조건 및 설비 데이터 추출</p>
+</div>
+</li>
+<li class="flex items-start gap-2">
+<i class="fa-solid fa-check text-[#00509E] mt-1 text-sm"></i>
+<div>
+<p class="font-bold text-gray-800">신속한 불량 원인 규명 및 8D Report</p>
+<p class="text-sm text-gray-600">본사 QA팀과 연계하여 동일 Lot 재고 출하 정지 조치 및 고객사 시정 조치 보고서 제출</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="h-16 shrink-0 bg-white border-t border-gray-200 flex items-center px-12 justify-between">
+<div class="flex items-center gap-2 text-gray-500">
+<i class="fa-solid fa-shield-halved"></i>
+<p class="text-sm font-medium"><span class="font-bold">품질 보증:</span> 제조 이력의 완벽한 추적성(Traceability) 확보가 영업 신뢰도의 핵심입니다.</p>
+</div>
+<div>
+<p class="text-sm text-gray-400 font-bold">Slide 5</p>
+</div>
+</footer>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>[Part 5] 회로 보호 및 센싱 원리</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cbd5e1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Solid Brand Colors */
+        .bg-brand-navy { background-color: #0A1931; }
+        .text-brand-navy { color: #0A1931; }
+        .bg-brand-blue { background-color: #00509E; }
+        .text-brand-blue { color: #00509E; }
+        .bg-brand-light { background-color: #F0F4F8; }
+        
+        /* Flow Diagram Styles */
+        .flow-box {
+            background-color: #ffffff;
+            border: 2px solid #00509E;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            text-align: center;
+            flex: 1;
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        
+        .flow-arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #00509E;
+            font-size: 1.5rem;
+            padding: 0 1rem;
+        }
+
+        /* Principle Cards */
+        .principle-card {
+            background-color: #ffffff;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-left: 8px solid #00509E;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .principle-card.icl { border-left-color: #D97706; }
+        .principle-card.bms { border-left-color: #DC2626; }
+        
+        .card-header {
+            padding: 1rem 1.5rem;
+            background-color: #F8FAFC;
+            border-bottom: 1px solid #E2E8F0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            display: flex;
+            gap: 1.5rem;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Header -->
+<header class="h-24 bg-brand-navy flex items-center px-12 shrink-0 justify-between">
+<div class="flex items-center gap-4">
+<i class="fa-solid fa-microchip text-white text-3xl"></i>
+<p class="text-white text-3xl font-bold m-0 tracking-wide">[Part 5] 회로 보호 및 센싱 원리</p>
+</div>
+<div>
+<p class="text-gray-300 font-medium tracking-widest text-sm">SEMITEC KOREA TECHNICAL SALES</p>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 flex flex-col px-12 py-8 bg-brand-light gap-8">
+<!-- Section 1: Sensing Flow -->
+<section class="flex flex-col gap-4">
+<div class="border-b-2 border-gray-300 pb-2">
+<p class="text-2xl font-bold text-brand-navy">온도 센싱 원리 (Temperature Sensing Flow)</p>
+</div>
+<div class="flex items-center justify-between w-full mt-2 bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+<div class="flow-box">
+<i class="fa-solid fa-temperature-half text-3xl text-red-500 mb-2"></i>
+<p class="font-bold text-gray-800">1. 온도 변화</p>
+<p class="text-sm text-gray-600 mt-1">주변 환경/부품 발열</p>
+</div>
+<div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+<div class="flow-box">
+<i class="fa-solid fa-wave-square text-3xl text-brand-blue mb-2"></i>
+<p class="font-bold text-gray-800">2. NTC 저항 변화</p>
+<p class="text-sm text-gray-600 mt-1">온도 상승 → 저항 감소</p>
+</div>
+<div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+<div class="flow-box">
+<i class="fa-solid fa-bolt text-3xl text-yellow-500 mb-2"></i>
+<p class="font-bold text-gray-800">3. 전압 신호 변환</p>
+<p class="text-sm text-gray-600 mt-1">분배 회로 통한 전압차</p>
+</div>
+<div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+<div class="flow-box">
+<i class="fa-solid fa-microchip text-3xl text-gray-700 mb-2"></i>
+<p class="font-bold text-gray-800">4. MCU 제어</p>
+<p class="text-sm text-gray-600 mt-1">ADC 변환 및 로직 수행</p>
+</div>
+</div>
+</section>
+<!-- Section 2: Core Mechanisms -->
+<section class="flex gap-8 h-full">
+<!-- ICL Principle -->
+<div class="principle-card icl flex-1">
+<div class="card-header">
+<i class="fa-solid fa-plug-circle-exclamation text-2xl text-[#D97706]"></i>
+<div>
+<p class="text-xl font-bold text-gray-900">돌입 전류 제한 (Inrush Current Limiting)</p>
+</div>
+</div>
+<div class="card-body bg-yellow-50/30">
+<div class="flex-1 flex flex-col justify-center gap-4">
+<div class="bg-white p-4 rounded border border-gray-200 shadow-sm">
+<p class="font-bold text-[#D97706] mb-1"><i class="fa-solid fa-1 mr-2"></i>전원 투입 초기</p>
+<p class="text-gray-700 text-sm">초기 상태의 <span class="font-bold">고저항(High Resistance)</span> 특성으로 과도한 돌입 전류를 제한하여 회로 소손 방지</p>
+</div>
+<div class="text-center text-gray-400"><i class="fa-solid fa-arrow-down"></i></div>
+<div class="bg-white p-4 rounded border border-gray-200 shadow-sm">
+<p class="font-bold text-green-600 mb-1"><i class="fa-solid fa-2 mr-2"></i>정상 동작 시</p>
+<p class="text-gray-700 text-sm">전류 흐름에 의한 <span class="font-bold">자가 발열(Self-heating)</span>로 저항이 급감하여 전력 손실 최소화 및 고효율 유지</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Battery Control -->
+<div class="principle-card bms flex-1">
+<div class="card-header">
+<i class="fa-solid fa-battery-exclamation text-2xl text-[#DC2626]"></i>
+<div>
+<p class="text-xl font-bold text-gray-900">배터리 제어 (Battery Management)</p>
+</div>
+</div>
+<div class="card-body bg-red-50/30">
+<div class="flex-1 flex flex-col justify-center gap-4">
+<div class="bg-white p-4 rounded border border-gray-200 shadow-sm">
+<p class="font-bold text-brand-navy mb-1"><i class="fa-solid fa-temperature-arrow-up mr-2 text-red-500"></i>과충전/과방전 감지</p>
+<p class="text-gray-700 text-sm">배터리 셀 온도의 급격한 상승을 NTC 서미스터가 실시간으로 정밀하게 감지 (Safety First)</p>
+</div>
+<div class="text-center text-gray-400"><i class="fa-solid fa-arrow-down"></i></div>
+<div class="bg-white p-4 rounded border border-gray-200 shadow-sm">
+<p class="font-bold text-red-600 mb-1"><i class="fa-solid fa-shield-halved mr-2"></i>보호 회로 작동</p>
+<p class="text-gray-700 text-sm">BMS(Battery Management System)에 신호를 전달하여 즉각적인 <span class="font-bold">회로 차단(Cut-off)</span> 및 열폭주 예방</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="h-16 shrink-0 bg-white border-t border-gray-200 flex items-center px-12 justify-between">
+<div class="flex items-center gap-2 text-gray-500">
+<i class="fa-solid fa-lightbulb"></i>
+<p class="text-sm font-medium"><span class="font-bold">Key Point:</span> NTC는 온도에 반비례하여 저항이 감소하는 부특성(Negative Temperature Coefficient) 소자입니다.</p>
+</div>
+<div>
+<p class="text-sm text-gray-400 font-bold">Slide 6</p>
+</div>
+</footer>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>[Part 6] 데이터시트 독해 및 정밀도 분석</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cbd5e1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Solid Brand Colors */
+        .bg-brand-navy { background-color: #0A1931; }
+        .text-brand-navy { color: #0A1931; }
+        .bg-brand-blue { background-color: #00509E; }
+        .text-brand-blue { color: #00509E; }
+        .bg-brand-light { background-color: #F0F4F8; }
+        
+        /* Custom Components */
+        .formula-box {
+            background-color: #0A1931;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            border: 4px solid #00509E;
+            text-align: center;
+            position: relative;
+        }
+        
+        .table-container {
+            background-color: #ffffff;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+            overflow: hidden;
+        }
+        
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .data-table th, .data-table td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid #e2e8f0;
+            text-align: center;
+        }
+        
+        .data-table th {
+            background-color: #F8FAFC;
+            font-weight: 700;
+            color: #0A1931;
+            border-bottom: 2px solid #cbd5e1;
+        }
+        
+        .data-table tr:last-child td { border-bottom: none; }
+        .data-table tbody tr:hover { background-color: #F1F5F9; }
+        
+        .highlight-row { background-color: #FFFBEB !important; }
+        .highlight-cell { font-weight: bold; color: #D97706; }
+
+        .info-card {
+            background-color: #ffffff;
+            border-left: 6px solid #00509E;
+            padding: 1.25rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 1rem;
+        }
+        
+        .info-card.b-const { border-left-color: #DC2626; }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Header -->
+<header class="h-24 bg-brand-navy flex items-center px-12 shrink-0 justify-between">
+<div class="flex items-center gap-4">
+<i class="fa-solid fa-file-invoice text-white text-3xl"></i>
+<p class="text-white text-3xl font-bold m-0 tracking-wide">[Part 6] 데이터시트 독해 및 정밀도 분석</p>
+</div>
+<div>
+<p class="text-gray-300 font-medium tracking-widest text-sm">SEMITEC KOREA TECHNICAL SALES</p>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 flex px-12 py-8 gap-10 bg-brand-light">
+<!-- Left Column: Formula & B-constant -->
+<section class="w-1/2 flex flex-col gap-6">
+<div class="border-b-2 border-gray-300 pb-2">
+<p class="text-2xl font-bold text-brand-navy">NTC 기본 수식 및 B상수 (B-constant)</p>
+</div>
+<!-- Formula Box -->
+<div class="formula-box mt-4">
+<div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#00509E] text-white px-4 py-1 rounded-full text-sm font-bold shadow-md">
+<p>온도-저항 상관관계 공식</p>
+</div>
+<p class="text-white text-4xl font-black tracking-wider leading-relaxed mt-4">
+<span class="text-[#60A5FA]">R</span> = A · e<sup class="text-[#FBBF24] text-2xl">B/T</sup>
+</p>
+<div class="flex justify-center gap-6 mt-4 text-gray-300 text-sm">
+<p><span class="font-bold text-white">R:</span> 저항값(Ω)</p>
+<p><span class="font-bold text-white">A:</span> 상수</p>
+<p><span class="font-bold text-[#FBBF24]">B:</span> B정수(K)</p>
+<p><span class="font-bold text-white">T:</span> 절대온도(K)</p>
+</div>
+</div>
+<!-- B-constant Importance -->
+<div class="flex flex-col gap-2 mt-2">
+<div class="info-card b-const">
+<div class="flex items-center gap-3 mb-2">
+<i class="fa-solid fa-triangle-exclamation text-2xl text-red-600"></i>
+<p class="text-xl font-bold text-gray-900">B-constant(B정수)의 중요성</p>
+</div>
+<ul class="space-y-2 mt-3 pl-2">
+<li class="flex items-start gap-2">
+<i class="fa-solid fa-check text-red-600 mt-1"></i>
+<p class="text-gray-700 text-base">B정수 오차가 클수록 고온/저온 끝단에서 <strong>온도 측정 오차 급증</strong></p>
+</li>
+<li class="flex items-start gap-2">
+<i class="fa-solid fa-check text-red-600 mt-1"></i>
+<p class="text-gray-700 text-base">고정밀 요구 시: <strong>B정수 공차가 좁은 제품군(±1% 이하) 우선 제안</strong></p>
+</li>
+</ul>
+</div>
+</div>
+<!-- ECharts Container for R-T Curve -->
+<div class="flex-1 bg-white rounded-lg shadow-sm border border-gray-200 p-2" id="rtChart" style="min-height: 200px;"></div>
+</section>
+<!-- Right Column: R-T Table & Precision -->
+<section class="w-1/2 flex flex-col gap-6">
+<div class="border-b-2 border-gray-300 pb-2">
+<p class="text-2xl font-bold text-brand-navy">R-T Table 활용 및 정밀도(Tolerance) 분석</p>
+</div>
+<div class="info-card mb-0">
+<div class="flex items-center gap-3 mb-2">
+<i class="fa-solid fa-table text-2xl text-brand-blue"></i>
+<p class="text-xl font-bold text-gray-900">고객사 동작 온도 범위 내 오차율 확인</p>
+</div>
+<p class="text-gray-700 text-sm mt-2">데이터시트의 R-T Table을 통해 타겟 온도(예: -40~125°C)에서의 저항값 편차 및 온도 측정 오차(ΔT)를 산출하여 고객에게 제시합니다.</p>
+</div>
+<!-- Example R-T Table -->
+<div class="table-container">
+<div class="bg-gray-50 px-4 py-2 border-b border-gray-200 flex justify-between items-center">
+<p class="font-bold text-gray-700 text-sm">Example R-T Table (R25=10kΩ, B25/85=3435K, ±1%)</p>
+<span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">Extract</span>
+</div>
+<table class="data-table">
+<thead>
+<tr>
+<th>Temp (°C)</th>
+<th>R min (kΩ)</th>
+<th>R center (kΩ)</th>
+<th>R max (kΩ)</th>
+<th>Temp Tol. (±°C)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-40</td>
+<td>188.5</td>
+<td>195.6</td>
+<td>202.7</td>
+<td class="text-red-500 font-bold">1.25</td>
+</tr>
+<tr>
+<td>0</td>
+<td>27.28</td>
+<td>27.65</td>
+<td>28.02</td>
+<td class="text-yellow-600 font-bold">0.45</td>
+</tr>
+<tr class="highlight-row">
+<td>25</td>
+<td>9.900</td>
+<td class="highlight-cell">10.00</td>
+<td>10.10</td>
+<td class="text-green-600 font-bold">0.25</td>
+</tr>
+<tr>
+<td>85</td>
+<td>1.431</td>
+<td>1.451</td>
+<td>1.471</td>
+<td class="text-yellow-600 font-bold">0.68</td>
+</tr>
+<tr>
+<td>125</td>
+<td>0.531</td>
+<td>0.543</td>
+<td>0.555</td>
+<td class="text-red-500 font-bold">1.42</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="h-16 shrink-0 bg-white border-t border-gray-200 flex items-center px-12 justify-between">
+<div class="flex items-center gap-2 text-gray-500">
+<i class="fa-solid fa-magnifying-glass"></i>
+<p class="text-sm font-medium"><span class="font-bold">분석 팁:</span> 기준 온도(25°C)에서 멀어질수록 B정수 공차 누적으로 인해 온도 오차(Temp Tol.)가 증가합니다.</p>
+</div>
+<div>
+<p class="text-sm text-gray-400 font-bold">Slide 7</p>
+</div>
+</footer>
+</div>
+<!-- ECharts Initialization Script -->
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var chartDom = document.getElementById('rtChart');
+            var myChart = echarts.init(chartDom);
+            var option;
+
+            // Generate some dummy R-T curve data (exponential decay)
+            let data = [];
+            for (let t = -40; t <= 125; t += 5) {
+                // T in Kelvin
+                let tempK = t + 273.15;
+                // Simplified R calculation based on R25=10k, B=3435
+                let r = 10 * Math.exp(3435 * (1/tempK - 1/298.15));
+                data.push([t, r.toFixed(2)]);
+            }
+
+            option = {
+                title: {
+                    text: 'Typical R-T Curve',
+                    left: 'center',
+                    textStyle: { fontSize: 14, color: '#334155' }
+                },
+                tooltip: {
+                    trigger: 'axis',
+                    formatter: function (params) {
+                        return 'Temp: ' + params[0].value[0] + '°C<br/>Resistance: ' + params[0].value[1] + ' kΩ';
+                    }
+                },
+                grid: {
+                    left: '3%',
+                    right: '4%',
+                    bottom: '10%',
+                    top: '25%',
+                    containLabel: true
+                },
+                xAxis: {
+                    type: 'value',
+                    name: 'Temp (°C)',
+                    nameLocation: 'middle',
+                    nameGap: 25,
+                    min: -40,
+                    max: 125,
+                    axisLine: { lineStyle: { color: '#94a3b8' } }
+                },
+                yAxis: {
+                    type: 'log',
+                    name: 'Resistance (kΩ) - Log Scale',
+                    axisLine: { lineStyle: { color: '#94a3b8' } },
+                    splitLine: { lineStyle: { type: 'dashed', color: '#e2e8f0' } }
+                },
+                series: [
+                    {
+                        name: 'Resistance',
+                        type: 'line',
+                        smooth: true,
+                        showSymbol: false,
+                        itemStyle: { color: '#00509E' },
+                        lineStyle: { width: 3 },
+                        data: data
+                    }
+                ]
+            };
+
+            option && myChart.setOption(option);
+        });
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>[Part 7] 업무 효율화 도구 (Excel &amp; Teams)</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cbd5e1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Solid Brand Colors */
+        .bg-brand-navy { background-color: #0A1931; }
+        .text-brand-navy { color: #0A1931; }
+        .bg-brand-blue { background-color: #00509E; }
+        .text-brand-blue { color: #00509E; }
+        .bg-brand-light { background-color: #F0F4F8; }
+        
+        /* Custom Components */
+        .tool-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+            border-top: 6px solid #00509E;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .tool-excel { border-top-color: #107C41; }
+        .tool-erp { border-top-color: #F59E0B; }
+        .tool-teams { border-top-color: #5B5FC7; }
+
+        .tool-header {
+            padding: 1.5rem;
+            background-color: #F8FAFC;
+            border-bottom: 1px solid #E2E8F0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .tool-icon-wrapper {
+            width: 50px;
+            height: 50px;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            color: white;
+        }
+
+        .icon-excel { background-color: #107C41; }
+        .icon-erp { background-color: #F59E0B; }
+        .icon-teams { background-color: #5B5FC7; }
+
+        .tool-body {
+            padding: 1.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            background-color: #F8FAFC;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border-left: 3px solid #cbd5e1;
+        }
+
+        .feature-excel { border-left-color: #107C41; }
+        .feature-erp { border-left-color: #F59E0B; }
+        .feature-teams { border-left-color: #5B5FC7; }
+
+        .data-source-banner {
+            background-color: #0A1931;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Header -->
+<header class="h-24 bg-brand-navy flex items-center px-12 shrink-0 justify-between">
+<div class="flex items-center gap-4">
+<i class="fa-solid fa-toolbox text-white text-3xl"></i>
+<p class="text-white text-3xl font-bold m-0 tracking-wide">[Part 7] 업무 효율화 도구 (Excel &amp; Teams)</p>
+</div>
+<div>
+<p class="text-gray-300 font-medium tracking-widest text-sm">SEMITEC KOREA TECHNICAL SALES</p>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 flex flex-col px-12 py-8 bg-brand-light gap-6">
+<div class="border-b-2 border-gray-300 pb-2">
+<p class="text-2xl font-bold text-brand-navy">핵심 업무 툴 활용 가이드 (Core Tool Utilization)</p>
+</div>
+<!-- Tool Cards Grid -->
+<div class="grid grid-cols-3 gap-6 flex-1">
+<!-- Excel VBA Card -->
+<div class="tool-card tool-excel">
+<div class="tool-header">
+<div class="tool-icon-wrapper icon-excel">
+<i class="fa-solid fa-file-excel"></i>
+</div>
+<div>
+<p class="text-xl font-bold text-gray-900">Excel VBA</p>
+<p class="text-sm text-gray-500 font-medium">자동화 스크립트</p>
+</div>
+</div>
+<div class="tool-body">
+<div class="feature-item feature-excel">
+<i class="fa-solid fa-calculator text-[#107C41] mt-1"></i>
+<div>
+<p class="font-bold text-gray-800">자동 견적 산출</p>
+<p class="text-sm text-gray-600 mt-1">Base Cost, 물류비, 환율을 연동한 원클릭 견적 생성 매크로 실행법 교육</p>
+</div>
+</div>
+<div class="feature-item feature-excel">
+<i class="fa-solid fa-chart-line text-[#107C41] mt-1"></i>
+<div>
+<p class="font-bold text-gray-800">수불/매출 집계 자동화</p>
+<p class="text-sm text-gray-600 mt-1">반복적인 수불 데이터 정리 및 월간 매출 집계 프로세스 자동화</p>
+</div>
+</div>
+</div>
+</div>
+<!-- ECOUNT ERP Card -->
+<div class="tool-card tool-erp">
+<div class="tool-header">
+<div class="tool-icon-wrapper icon-erp">
+<i class="fa-solid fa-cubes"></i>
+</div>
+<div>
+<p class="text-xl font-bold text-gray-900">ECOUNT ERP</p>
+<p class="text-sm text-gray-500 font-medium">전사적 자원 관리</p>
+</div>
+</div>
+<div class="tool-body">
+<div class="feature-item feature-erp">
+<i class="fa-solid fa-boxes-stacked text-[#F59E0B] mt-1"></i>
+<div>
+<p class="font-bold text-gray-800">품목 및 재고 관리</p>
+<p class="text-sm text-gray-600 mt-1">신규 NTC 파트넘버 품목 등록 및 실시간 재고 수불부 조회 실습</p>
+</div>
+</div>
+<div class="feature-item feature-erp">
+<i class="fa-solid fa-ship text-[#F59E0B] mt-1"></i>
+<div>
+<p class="font-bold text-gray-800">수입 통관 확인</p>
+<p class="text-sm text-gray-600 mt-1">일본/중국/베트남 거점 발송 물량의 입고 및 통관 현황 트래킹</p>
+</div>
+</div>
+</div>
+</div>
+<!-- MS Teams Card -->
+<div class="tool-card tool-teams">
+<div class="tool-header">
+<div class="tool-icon-wrapper icon-teams">
+<i class="fa-solid fa-users-rectangle"></i>
+</div>
+<div>
+<p class="text-xl font-bold text-gray-900">MS Teams</p>
+<p class="text-sm text-gray-500 font-medium">협업 및 커뮤니케이션</p>
+</div>
+</div>
+<div class="tool-body">
+<div class="feature-item feature-teams">
+<i class="fa-solid fa-folder-tree text-[#5B5FC7] mt-1"></i>
+<div>
+<p class="font-bold text-gray-800">업무 히스토리 아카이빙</p>
+<p class="text-sm text-gray-600 mt-1">모든 프로젝트 이력은 Teams 채널 내 '파일' 탭에 체계적으로 기록</p>
+</div>
+</div>
+<div class="feature-item feature-teams">
+<i class="fa-solid fa-book-open text-[#5B5FC7] mt-1"></i>
+<div>
+<p class="font-bold text-gray-800">Wiki 기반 지식 공유</p>
+<p class="text-sm text-gray-600 mt-1"><span class="font-bold bg-blue-100 px-1">4월부터</span> 출하 게시판 및 기술 자료 Wiki 채널을 통한 실시간 지식 공유</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Data Source Banner -->
+<div class="data-source-banner">
+<i class="fa-solid fa-database text-2xl text-blue-300"></i>
+<div>
+<p class="text-lg font-bold">Data &amp; Reference Source</p>
+<p class="text-sm text-gray-300 mt-1">본 교육 자료의 모든 프로세스 및 양식은 <strong>민경선 선임 관리 업무 매뉴얼</strong> 및 <strong>사내 시스템 가이드북</strong>을 근거로 작성되었습니다.</p>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="h-16 shrink-0 bg-white border-t border-gray-200 flex items-center px-12 justify-between">
+<div class="flex items-center gap-2 text-gray-500">
+<i class="fa-solid fa-laptop-code"></i>
+<p class="text-sm font-medium"><span class="font-bold">Digital Transformation:</span> 디지털 도구의 적극적인 활용이 영업 경쟁력을 좌우합니다.</p>
+</div>
+<div>
+<p class="text-sm text-gray-400 font-bold">Slide 8</p>
+</div>
+</footer>
+</div>
+</body>
+</html>
+
